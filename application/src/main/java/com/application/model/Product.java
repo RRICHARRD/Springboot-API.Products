@@ -26,6 +26,9 @@ public class Product {
 	
 	@Column(nullable = false)
 	private double price;
+	
+	@Column(nullable = false)
+	private int quantity;
 
 	public Long getId() {
 		
@@ -68,6 +71,14 @@ public class Product {
 		this.price = price;
 	}
 
+	public double getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -78,6 +89,8 @@ public class Product {
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		long temp;
 		temp = Double.doubleToLongBits(price);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		temp = Double.doubleToLongBits(quantity);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		return result;
 	}
@@ -113,8 +126,12 @@ public class Product {
 			return false;
 		if (Double.doubleToLongBits(price) != Double.doubleToLongBits(other.price))
 			return false;
+		if (Double.doubleToLongBits(quantity) != Double.doubleToLongBits(other.quantity))
+			return false;
 		return true;
-	} 
+	}
+
+	
 	
 	
 }
