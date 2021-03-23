@@ -8,6 +8,7 @@ import com.application.model.Product;
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
 	
-	public abstract Product findById(long id);
+	private Product findById(long id);
 		
+	}
 }
