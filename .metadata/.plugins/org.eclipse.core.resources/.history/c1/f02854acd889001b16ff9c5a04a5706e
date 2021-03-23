@@ -1,0 +1,6 @@
+package com.application.model;
+
+@Entity
+public class Product {
+
+}

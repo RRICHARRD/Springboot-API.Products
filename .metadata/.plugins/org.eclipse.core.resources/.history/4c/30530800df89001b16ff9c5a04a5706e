@@ -1,0 +1,5 @@
+package com.application.repository;
+
+public class ProductRepository {
+
+}

@@ -1,0 +1,10 @@
+package com.application.model;
+
+
+import lombok.Data;
+
+@Data
+@Entity
+public class Product {
+
+}
