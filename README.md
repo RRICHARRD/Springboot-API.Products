@@ -19,3 +19,6 @@ Update
 
 Delete
 ![Postman-delete](https://github.com/RRICHARRD/Springboot-API.Products/blob/master/postman-screenshots/delete-byId.jpg)
+
+We don't need to use postman all times we want to use api to test, with swagger this can be do in browser.
+![Swagger-page](https://github.com/RRICHARRD/Springboot-API.Products/blob/master/swagger-screenshot/swagerPage.jpg)
