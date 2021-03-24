@@ -63,7 +63,6 @@ public class ProductController {
 	}
 	
 	@PutMapping("/update")
-	@ApiOperation(value = "Update a product saved in database")
 	public Product updateProduct(@RequestBody Product product) {
 		return productRepository.save(product);
 	}
